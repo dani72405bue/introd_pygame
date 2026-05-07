@@ -10,7 +10,7 @@ import math
 pygame.init()
 
 # Establecer dimensiones de la ventana
-ventana = pygame.display.set_mode((400,400))
+ventana = pygame.display.set_mode((700,700))
 
 # establecer titulo de la ventana
 pygame.display.set_caption("Dibujar formas básicas")
@@ -45,3 +45,16 @@ while True:
     ventana.fill(negro)
 
     # ---------------
+
+    pygame.draw.circle(ventana, blanco, (200,200), 100, 5)
+    pygame.draw.circle(ventana, blanco, (200,200), 80, 5)
+
+    pygame.draw.line(ventana, naranja, (132, 200), (277, 200), 5)
+    pygame.draw.line(ventana, naranja, (200,120), (200,280), 5)
+
+
+
+
+    # actualizar visualización de la ventana
+    pygame.display.flip()
+
